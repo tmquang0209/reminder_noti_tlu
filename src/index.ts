@@ -1,7 +1,7 @@
-import dotenv from "dotenv";
+import "dotenv/config";
 import express from "express";
 import config from "./config";
-dotenv.config();
+
 const app = express();
 
 app.post("/webhook", (req, res) => {
