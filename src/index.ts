@@ -16,6 +16,9 @@ app.get("/messaging-webhook", (req, res) => {
 	let mode = req.query["hub.mode"];
 	let token = req.query["hub.verify_token"];
 	let challenge = req.query["hub.challenge"];
+	console.log(`\u{1F7EA} Received verification request:`);
+	console.log("Mode:", mode);
+	console.log("Token:", token, "Verify Token:", config.verifyToken);
 
 	// Check if a token and mode is in the query string of the request
 	if (mode && token) {
