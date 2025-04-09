@@ -1,0 +1,20 @@
+{
+	"name": "reminder_tlu",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"scripts": {
+		"start": "ts-node src/index.ts",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"express": "^5.1.0"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.1",
+		"@types/typescript": "^0.4.29"
+	}
+}
